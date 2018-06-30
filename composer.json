@@ -1,0 +1,41 @@
+{
+    "name": "sofa/laravel-db-queries-alert",
+    "description": "Insanely simple check against DB querying abuse in Laravel app AKA Check Your Queries Bro!",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/jarektkaczyk/laravel-check-your-queries-bro/issues",
+        "source": "https://github.com/jarektkaczyk/laravel-check-your-queries-bro"
+    },
+    "keywords": [
+        "laravel",
+        "database",
+        "eloquent",
+        "queries",
+        "logging"
+    ],
+    "authors": [
+        {
+            "name": "Jarek Tkaczyk",
+            "email": "jarek@softonsofa.com",
+            "homepage": "https://softonsofa.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/database": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sofa\\DbQueriesAlert\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sofa\\DbQueriesAlert\\ServiceProvider"
+            ]
+        }
+    }
+}
