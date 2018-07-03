@@ -8,7 +8,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function boot()
     {
-        if (env('DB_QUERIES_ALERT_ENABLED', false)) {
+        if (config('db_queries_alert.enabled')) {
             $this->app['db']->enableQueryLog();
         }
 
