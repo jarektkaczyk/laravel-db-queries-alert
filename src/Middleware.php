@@ -14,7 +14,7 @@ class Middleware
     {
         $response = $next($request);
 
-        if (env('DB_QUERIES_ALERT_ENABLED', false)) {
+        if (config('db_queries_alert.enabled')) {
             $this->crunchTheNumbers();
         }
 
